@@ -250,6 +250,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         try{
             musicList = new ArrayList<music>();
             file = getFileStreamPath("music");
+            //需在data/data/com.example.musicplayer/files/music文件夹下预置音乐文件
             File[] subFile = file.listFiles();
             Toast.makeText(this, "已添加"+file.getPath()+"中的文件", Toast.LENGTH_SHORT).show();
             int num = 0;
